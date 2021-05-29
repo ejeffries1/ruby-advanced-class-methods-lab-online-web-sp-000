@@ -51,7 +51,7 @@ class Song
   def self.new_from_filename(file)
     new_file = file.split(" - ")
     new_file.collect do |words|
-      words.split(".mp3")
+      new_set = words.split(".mp3")
     binding.pry
     end
   end
