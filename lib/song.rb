@@ -53,7 +53,10 @@ class Song
     new_set = new_file[1].chomp(".mp3")
     new_file[0] = artist_name
     new_set = name
-    
-    binding.pry
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
+    song
+    #binding.pry
   end
 end
