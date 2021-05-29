@@ -50,13 +50,12 @@ class Song
   
   def self.new_from_filename(file)
     new_file = file.split(" - ")
-    new_set = new_file[1].chomp(".mp3")
+    name = new_file[1].chomp(".mp3")
     artist_name = new_file[0]
-    new_set = name
     song = self.new
     song.name = name
     song.artist_name = artist_name
     song
-    binding.pry
+    #binding.pry
   end
 end
